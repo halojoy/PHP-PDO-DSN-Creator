@@ -1,6 +1,6 @@
 <?php
 
-class  DSNCreator {
+class DSNCreator {
 
     public $dsn;
     public $driver;
