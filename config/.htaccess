@@ -1,0 +1,3 @@
+<Files pdo_config.php>
+Require all denied
+</Files>
