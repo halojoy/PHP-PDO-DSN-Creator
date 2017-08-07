@@ -49,7 +49,7 @@ $pdo_dsn->pdoTest();
     <p><u>PDO Database connection</u> was sucessfully installed.<br>
     The file <b>'<?php echo $file; ?>'</b> has been written.<br>
     You should now remove the directory <b>'install_files'</b><br>
-	and this file.</p>
+    and this file.</p>
     And use this for your scripts:<br>
 <b>
 <?php
