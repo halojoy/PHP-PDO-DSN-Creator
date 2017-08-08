@@ -18,7 +18,7 @@ highlight_string(
 
 include(\'config/pdo_config.php\');
 $db = new PDO($dsn, $db_user, $db_pass);');
-?>
+?> 
 </b>
     </div>
 </body>
