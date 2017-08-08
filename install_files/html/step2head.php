@@ -7,6 +7,6 @@
 </head>
 <body>
 
-<h2>PDO Installation step 2</h2>
+    <h2>PDO Installation step 2</h2>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
         <fieldset>
