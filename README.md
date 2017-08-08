@@ -4,5 +4,5 @@ Supports DSN connection for 5 different databases:
 * MySQL<br>
 * PostgreSQL<br>
 * SQLite<br>
-* SQL Server(Express<br>
+* SQL Server(Express)<br>
 * Firebird
