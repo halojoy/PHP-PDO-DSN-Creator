@@ -1,15 +1,15 @@
 <?php
 
 if (!isset($_POST['step'])) {
-    include('install_files/html/step1.htm');
+    include('install_files/html/step1.php');
     exit();
 }
 
 if ($_POST['step'] == '1') {
     $driver = $_POST['driver'];
-    include('install_files/html/step2head.htm');
-    include('install_files/html/'.$driver.'.htm');
-    include('install_files/html/step2foot.htm');
+    include('install_files/html/step2head.php');
+    include('install_files/html/'.$driver.'.php');
+    include('install_files/html/step2foot.php');
     exit();
 }
 
@@ -36,5 +36,5 @@ $pdo_dsn->makeDSN();
 $pdo_dsn->fileWrite($file);
 $pdo_dsn->pdoTest();
 
-include('install_files/html/finish.htm');
+include('install_files/html/finish.php');
 exit();
