@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h2>PDO Installation step 1</h2>
+    <h2>PDO Installation step 1</h2>
     <form action="<?php htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
         <fieldset>
         <legend>Select Database</legend>
