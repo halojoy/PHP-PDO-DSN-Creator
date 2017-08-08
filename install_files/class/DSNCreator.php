@@ -28,7 +28,11 @@ class DSNCreator {
         }
         elseif ($this->driver == 'sqlsrv') {
             $this->dsn = 'sqlsrv:Server='.$this->host.','.$this->port.';Database='.$this->name;
-        } else {
+        }
+        elseif ($this->driver == 'oci') {
+            $this->dsn = 'oci:dbname=//'.$this->host.':'.$this->port.'/'.$this->name;
+        }
+        else {
             $this->dsn = $this->driver.':host='.$this->host.';port='.$this->port.';dbname='.$this->name;
         }
         return $this->dsn;
