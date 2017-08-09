@@ -25,13 +25,13 @@ class DSNCreator
     public function makeDSN()
     {
         if ($this->driver == 'sqlite') {
-            $this->dsn = 'sqlite:'.$this->name;
+            $this->dsn = 'sqlite:' . $this->name;
         } elseif ($this->driver == 'sqlsrv') {
-            $this->dsn = 'sqlsrv:Server='.$this->host.','.$this->port.';Database='.$this->name;
+            $this->dsn = 'sqlsrv:Server=' . $this->host . ',' . $this->port . ';Database=' . $this->name;
         } elseif ($this->driver == 'oci') {
-            $this->dsn = 'oci:dbname=//'.$this->host.':'.$this->port.'/'.$this->name;
+            $this->dsn = 'oci:dbname=//' . $this->host . ':' . $this->port . '/' . $this->name;
         } else {
-            $this->dsn = $this->driver.':host='.$this->host.';port='.$this->port.';dbname='.$this->name;
+            $this->dsn = $this->driver . ':host=' . $this->host . ';port=' . $this->port . ';dbname=' . $this->name;
         }
         return $this->dsn;
     }
