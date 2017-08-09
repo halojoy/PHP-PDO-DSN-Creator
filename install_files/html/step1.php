@@ -13,11 +13,11 @@
         <legend>Select Database</legend>
         <br>
         <select name="driver">
-            <option value="sqlite" selected>SQLite</option>
-            <option value="mysql">MySQL</option>
+            <option value="mysql" selected>MySQL</option>
             <option value="pgsql">PostgreSQL</option>
-            <option value="firebird">Firebird</option>
+            <option value="sqlite">SQLite</option>
             <option value="sqlsrv">MS SQL Server(Express)</option>
+            <option value="firebird">Firebird</option>
             <option value="oci">Oracle</option>
         </select>
         <input type="hidden" name="step" value="1">
