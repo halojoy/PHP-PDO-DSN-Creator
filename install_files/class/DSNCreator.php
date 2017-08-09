@@ -12,7 +12,7 @@ class DSNCreator
     public $pass;
     public $file;
     
-    public function __construct ($driver, $host, $port, $name, $user, $pass)
+    public function __construct($driver, $host, $port, $name, $user, $pass)
     {
         $this->driver = $driver;
         $this->host = $host;
@@ -22,7 +22,7 @@ class DSNCreator
         $this->pass = $pass;
     }
 
-    public function makeDSN ()
+    public function makeDSN()
     {
         if ($this->driver == 'sqlite') {
             $this->dsn = 'sqlite:'.$this->name;
@@ -36,7 +36,7 @@ class DSNCreator
         return $this->dsn;
     }
 
-    public function fileWrite ($file)
+    public function fileWrite($file)
     {
         $this->file = $file;
         $write = <<<WRITE
@@ -49,7 +49,7 @@ WRITE;
         file_put_contents($this->file, $write);
     }
 
-    public function pdoTest ()
+    public function pdoTest()
     {
         // Connect database
         require($this->file);
