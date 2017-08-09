@@ -1,6 +1,7 @@
 <?php
 
-class DSNCreator {
+class DSNCreator
+{
 
     public $dsn;
     public $driver;
@@ -25,14 +26,11 @@ class DSNCreator {
     {
         if ($this->driver == 'sqlite') {
             $this->dsn = 'sqlite:'.$this->name;
-        }
-        elseif ($this->driver == 'sqlsrv') {
+        } elseif ($this->driver == 'sqlsrv') {
             $this->dsn = 'sqlsrv:Server='.$this->host.','.$this->port.';Database='.$this->name;
-        }
-        elseif ($this->driver == 'oci') {
+        } elseif ($this->driver == 'oci') {
             $this->dsn = 'oci:dbname=//'.$this->host.':'.$this->port.'/'.$this->name;
-        }
-        else {
+        } else {
             $this->dsn = $this->driver.':host='.$this->host.';port='.$this->port.';dbname='.$this->name;
         }
         return $this->dsn;
