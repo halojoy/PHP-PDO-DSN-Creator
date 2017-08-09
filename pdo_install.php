@@ -18,7 +18,7 @@ if ($_POST['step'] != '2') {
 }
 
 $driver = $_POST['driver'];
-$name = $_POST['dbname'];
+$name   = $_POST['dbname'];
 if ($driver == 'sqlite') {
     $host = $port = $user = $pass = null;
 } else {
