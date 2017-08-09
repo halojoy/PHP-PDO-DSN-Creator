@@ -2,14 +2,13 @@
 
 class DSNCreator
 {
-
-    public $dsn;
     public $driver;
     public $host;
     public $port;
     public $name;
     public $user;
     public $pass;
+    public $dsn;
     public $file;
     
     public function __construct($driver, $host, $port, $name, $user, $pass)
